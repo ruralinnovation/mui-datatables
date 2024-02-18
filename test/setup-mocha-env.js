@@ -1,6 +1,9 @@
 import Enzyme from 'enzyme';
 import React from 'react';
-import Adapter from 'enzyme-adapter-react-16';
+import Adapter from '@cfaester/enzyme-adapter-react-18';
+
+console.error("Debugging setup-mocha-env");
+// "file": ["test/utils/helpers.js", "test/utils/authorizer.js"],
 
 /* required when running >= 16.0 */
 Enzyme.configure({ adapter: new Adapter() });
